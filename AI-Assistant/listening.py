@@ -1,4 +1,5 @@
-# Speech To Text
+# pip install SpeechRecognition
+
 import speech_recognition as sr
 
 while True:
@@ -12,3 +13,6 @@ while True:
             print('You Said : {}.'.format(text))
         except:
             print('Sorry Try Again..')
+"""
+Speech-To-Text
+"""
