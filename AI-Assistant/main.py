@@ -3,6 +3,7 @@ import speech_recognition as sr
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
+engine.serProperty('rate', 140)
 engine.setProperty('voice', voices[0].id)
 
 def speak(audio):
