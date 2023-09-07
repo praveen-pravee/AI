@@ -13,7 +13,6 @@ def speak(audio):
 def commands():
     rObj = sr.Recognizer()
     with sr.Microphone() as source:
-        print("I AM LISTENING SIR...")
         rObj.pause_threshold=0.9
         rObj.adjust_for_ambient_noise(source,duration=0.5)
         print("Speak Any...")
@@ -25,15 +24,20 @@ def commands():
     except:
         print("Sorry Try Again..")
         speak("please tell me again sir")
-       # query="none"
+        return None
     return query
+    
 if __name__ == "__main__":
 
     while True:
-
         query = commands().lower()
-
+        
         if 'who are you' in query:
             speak("I'm a Assistant for you")
+            
         if 'computer' in query:
             speak('yes I am a computer')
+            
+        if 'bye' in query:
+            speak('bye sir, you can call me anytime!)
+            break
