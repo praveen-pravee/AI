@@ -1,3 +1,4 @@
+"""
 import time
 import pyttsx3
 import speech_recognition as sr
@@ -101,5 +102,6 @@ if __name__ == "__main__":
             pyautogui.click()
             pyautogui.moveTo(35,53,1)
             pyautogui.click()
-            
+"""
+
             
